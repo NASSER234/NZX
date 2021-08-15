@@ -1,0 +1,86 @@
+<style amp-custom=''>
+.item .post-body iframe{display:0none}
+.item .post-body{user-select:none}
+.transform-active{animation:flash 1s infinite;display:inline-block!important;opactity:0}
+@keyframes flash {
+0%{opacity:.6;-moz-box-shadow:0 0 0 0 rgba(255,255,255,0.5);box-shadow:0 0 0 0 rgba(255,255,255,0.6)}
+70%{-moz-box-shadow:0 0 0 20px rgba(255,255,255,0);box-shadow:0 0 0 20px rgba(255,255,255,0)}
+100%{opacity:0;display:none;-moz-box-shadow:0 0 0 0 rgba(255,255,255,0);box-shadow:0 0 0 0 rgba(255,255,255,0)}
+}
+.post-ads{max-width:100%;overflow:hidden;margin:30px 0;text-align:center}
+html,body{height:100%}
+*{outline:0;transition:all .5s ease;-webkit-transition:all .5s ease;-moz-transition:all .5s ease;-o-transition:all .5s ease}
+.social-sec #social a,.simpleTab .tab-wrapper li a,.menu ul li,.PopularPosts .widget-content ul li,.PopularPosts img,.fbig1 ul li,.column ul li,.list ul li,.videos ul li,#related-posts li{transition:initial}
+*,:before,:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+a,abbr,acronym,address,applet,b,big,blockquote,body,caption,center,cite,code,dd,del,dfn,div,dl,dt,em,fieldset,font,form,h1,h2,h3,h4,h5,h6,html,i,iframe,img,ins,kbd,label,legend,li,object,p,pre,q,s,samp,small,span,strike,strong,sub,sup,table,tbody,td,tfoot,th,thead,tr,tt,u,ul,var{padding:0;border:0;outline:0;margin:0;background:0 0}
+ins{text-decoration:underline}
+del{text-decoration:line-through}
+ul li{list-style:disc}
+caption,th{text-align:center}
+img{border:none;position:relative}
+a,a:visited{text-decoration:none}
+a{color:#5C5796}
+a:hover{color:#4d3a87}
+q:after,q:before{content:&#39;&#39;}
+p{margin:0}
+abbr,acronym{border:0}
+.clear{clear:both}
+.section,.widget,.widget ul{margin:0;padding:0}
+.quickedit{display:none}
+@font-face{font-family:&#39;FontAwesome&#39;;src:url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/fonts/fontawesome-webfont.woff)}
+@font-face{font-family:&#39;Droid Arabic Naskh&#39;;font-weight:400;src:url(//fonts.gstatic.com/ea/droidarabicnaskh/v7/DroidNaskh-Regular.woff)}
+@font-face{font-family:&#39;ge-flow&#39;;font-weight:400;src:url(//cdn.rawgit.com/kol7sry/kol7sry/master/geflowbolde.woff)}
+.match{width:100%;float:right;margin-bottom:10px!important;position:relative;background-color:#fff;overflow:hidden;border-radius:4px;box-shadow:0 1px 2px rgba(43,59,93,0.15)}
+.match h3{padding:20px;text-align:center}
+#today{display:grid;width:100%}
+.match a{cursor:pointer;display:flex;width:100%;flex-direction:column}
+.meeting{margin:0;width:100%;float:right;padding:0}
+.match-center{margin-bottom:10px}
+.meeting .team{position:relative;float:right;width:25%;display:inline-block;text-align:center;height:100px}
+.meeting .team li{display:block;font-size:16px;width:100%;margin:0;text-align:center;font-weight:700;font-family:&#39;ge-flow&#39; ,Tahoma,Arial;color:#666}
+.meeting .team .logo{text-align:center;width:100%;height:70px;display:block;position:relative}
+.meeting .team .logo img{max-width:55px;max-height:55px;width:auto;height:auto;margin-right:-50%;position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);transform:translate(-50%,-50%);margin-top:0;margin-bottom:0}
+.match .case{text-align:center;float:right;width:50%;display:flex;justify-content:center;align-items:center;padding:0 10px;height:100px}
+.match .case .time1{position:relative;flex:1}
+.match .case .time{margin:auto;display:table}
+.match .case .time.e:before,.match .case .time.h:before,.match .case .time.m:before{padding:4px 14px 3px;border-radius:80px;font-weight:700;line-height:1.5;display:inline-block;font-size:12px}
+.match .case .time.e:before{content:&#39;انتهت المباراة&#39;;background:#474b4e}
+.match .case .time.h:before{content:&#39;ملخص المباراة&#39;}
+.match .case .time.m:before{content:&#39;ملخص المباراة&#39;}
+.date{color:#fff;padding:2px 8px;border-radius:80px;background:#0277bd;font-weight:700;line-height:1;display:inline-block;font-size:17px;margin-top:3px}
+.stay.stsrt{direction:ltr;font-size:2.2em;color:#535a68;font-weight:700;padding:0;margin:0;line-height:1.1}
+.stay.stsrt::before{content:&quot;بتوقيت مصر&quot;;font-size:12px;color:#f25a0f;clear:both;width:100%;display:block;text-align:center;margin-top:5px;font-family:&#39;ge-flow&#39; ,Tahoma,Arial;font-weight:100;letter-spacing:.5px}
+.stay.stsrt .soon{color:#12970b}
+.expired,.underway,.soon{color:#fff;padding:3px 8px 2px;border-radius:80px;background:#e00025;font-weight:100;line-height:1.5;display:inline-block;font-size:12px;margin:0;font-family:&#39;ge-flow&#39; ,Tahoma,Arial;letter-spacing:.5px}
+.expired{background-color:#1cb7d6}
+.date.soon{background:#35bd53}
+.match:hover a:before{background:rgba(0,0,0,0.63);position:absolute;width:100%;right:0;margin:0;z-index:999;line-height:74px;color:#fff;top:0;height:100%;border-radius:0;display:flex;justify-content:center;align-items:center;content:&quot;&quot;}
+.match:hover a::after{background:#e00025;position:absolute;height:40px;z-index:999;color:#fff;display:flex;justify-content:center;align-items:center;content:&#39;تابع المباراة الان&#39;;padding:0 19px;top:calc(50% - 20px);right:calc(50% - 75px);font-weight:700;border-radius:80px;font-size:13px;font-family:&#39;ge-flow&#39; ,Tahoma,Arial;letter-spacing:.7px}
+.underway:before,.underway:after{position:absolute;background:url(https://cdn.staticaly.com/img/3.bp.blogspot.com/-gG0NfxpITz8/W4As8rJH1RI/AAAAAAAAC2E/rxHXqZ2ddXA3pWQreE7pfJar8QTc_HAXACLcBGAs/s1600/live.gif);width:25px;height:25px;display:block;content:&#39;&#39;;background-size:cover;z-index:9}
+.underway::before{right:-20px;top:29px}
+.underway::after{left:-18px;top:29px}
+.match .info{width:100%;border-top:1px solid #eaeaea;margin-top:8px;display:inline-block;text-align:center;float:right;margin-bottom:-2px;padding:8px 15px;font-family:&#39;ge-flow&#39; ,Tahoma,Arial;font-size:16px}
+.match .info li{flex:1;float:right;width:50%;display:inline-block;font-size:.7em;padding:0 3px}
+.television:before,.trophy:before{content:&#39;&#39;;font-family:FontAwesome;color:#ffc714;text-rendering:auto;-webkit-font-smoothing:antialiased;font-size:12px;padding-left:7px}
+.television:before{content:&quot;\f26c&quot;}
+.trophy:before{content:&quot;\f091&quot;}
+.swtay.swtsrt{background:rgba(0,0,0,0.63);position:absolute;top:0;right:0;bottom:0;left:0;display:none;z-index:99}
+.match:hover .swtay.swtsrt{display:block}
+.dwate.swtay{display:none}
+.swtay.swtsrt{color:#fff;font-size:25px;line-height:75px;text-align:center;background:rgba(0,0,0,0.63);position:absolute;top:0;right:0;bottom:0;left:0;z-index:99}
+.swtay.swtsrt .soon{background:rgba(10,130,39,0.7)}
+.ewxpired{background:rgba(0,135,204,0.59)}
+.uwnderway{padding:5px 10px;margin:-5px -10px;background:rgba(255,0,0,0.57)}
+#tommorw{display:none}
+#yestrday{display:none}
+.result{color:#000;font-size:35px;padding-top:70px;font-family:arial;display:inline-block;position:relative;line-height:1;font-weight:700}
+
+@media(max-width: 480px) {
+.meeting .team .logo{height:50px;margin-top:5px}
+.meeting .team .logo img{max-width:45px;max-height:45px}
+.match .case{height:90px}
+.meeting .team li{display:block;font-size:13px}
+.stay.stsrt{font-size:1.5em;letter-spacing:-.5px}
+.date{font-size:14px}
+}
+</style>
